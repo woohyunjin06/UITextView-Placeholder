@@ -28,7 +28,7 @@ jobs:
     - uses: actions/checkout@v1
 
     - name: Select Xcode
-      run: sudo xcode-select -s ${{ matrix.env.xcode }}
+      run: sudo xcode-select -s ${{ matrix.env.xcode }}/Contents/Developer
 
     - name: Build and Test
       run: |
