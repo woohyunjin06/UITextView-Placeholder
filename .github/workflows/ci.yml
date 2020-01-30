@@ -28,7 +28,7 @@ jobs:
     - uses: actions/checkout@v1
 
     - name: Applicstions
-      run: ls -al | grep Xcode
+      run: ls -al /Applications/* | grep Xcode
 
     - name: Select Xcode
       run: sudo xcode-select -s ${{ matrix.env.xcode }}/Contents/Developer
